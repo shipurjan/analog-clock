@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Analog Clock</title>
+    <script src="script.js"></script>
+</head>
+
+
+<body onload="init()">
+    <controls>
+        <close></close>
+        <h2>Options</h2>
+        <input type="checkbox" id="continuous-movement" name="continuous-movement" />
+        <label for="continuous-movement">Continuous movement</label>
+        <h2>Colors</h2>
+        <input type="color" id="wall-bg-color" name="wall-bg-color" />
+        <label for="wall-bg-color">Wall background color</label>
+        <input type="color" id="clock-bg-color" name="clock-bg-color" />
+        <label for="clock-bg-color">Clock background color</label>
+        <input type="color" id="clock-fg-color" name="clock-fg-color" />
+        <label for="clock-fg-color">Clock foreground color</label>
+        <input type="color" id="clock-hands-seconds-color" name="clock-hands-seconds-color" />
+        <label for="clock-hands-seconds-color">Seconds hand color</label>
+        <input type="color" id="clock-hands-minutes-color" name="clock-hands-minutes-color" />
+        <label for="clock-hands-minutes-color">Minutes hand color</label>
+        <input type="color" id="clock-hands-hours-color" name="clock-hands-hours-color" />
+        <label for="clock-hands-hours-color">Hours hand color</label>
+    </controls>
+    <wall>
+        <options>
+            <hamburger>
+                <div></div>
+                <div></div>
+                <div></div>
+            </hamburger>
+        </options>
+        <face>
+            <centre></centre>
+            <marks>
+                <mark class="mark12">
+                    <hour>12</hour>
+                </mark>
+                <mark class="mark1"></mark>
+                <mark class="mark2"></mark>
+                <mark class="mark3">
+                    <hour>3</hour>
+                </mark>
+                <mark class="mark4"></mark>
+                <mark class="mark5"></mark>
+                <mark class="mark6">
+                    <hour>6</hour>
+                </mark>
+                <mark class="mark7"></mark>
+                <mark class="mark8"></mark>
+                <mark class="mark9">
+                    <hour>9</hour>
+                </mark>
+                <mark class="mark10"></mark>
+                <mark class="mark11"></mark>
+            </marks>
+            <hands>
+                <hand id="seconds"></hand>
+                <hand id="minutes"></hand>
+                <hand id="hours"></hand>
+            </hands>
+        </face>
+    </wall>
+</body>
+
+</html>
