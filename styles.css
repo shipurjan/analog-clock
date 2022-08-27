@@ -1,5 +1,5 @@
 :root {
-    --wall-bg-color: #a2a2a2;
+    --wall-bg-color: #6b6b6b;
     --clock-bg-color: #ffffff;
     --clock-fg-color: #000000;
     --clock-hands-seconds-color: #ff0000;
@@ -21,7 +21,7 @@ html {
 }
 
 html {
-    background-color: black;
+    background-color: var(--wall-bg-color);
     color: white;
     font-size: min(8vw, 8vh);
     font-family: Arial, Helvetica, sans-serif;
@@ -35,7 +35,7 @@ body {
 wall {
     display: flex;
     margin: auto auto;
-    background-color: var(--wall-bg-color);
+    background-color: transparent;
     width: min(100vw, 100vh);
     height: min(100vw, 100vh);
 }
@@ -53,7 +53,7 @@ controls {
     position: absolute;
     background-color: var(--clock-bg-color);
     color: var(--clock-fg-color);
-    padding: 1em;
+    padding: 2vh 8vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -62,7 +62,7 @@ controls {
     max-width: 75vw;
     height: 75vh;
     overflow-y: scroll;
-    border-radius: 10%;
+    border-radius: 2%;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
